@@ -8,3 +8,5 @@ RUN apk add --no-cache --virtual .persistent-deps \
       python \
       git \
       py-pip
+COPY package.json /
+RUN cd / && npm install
