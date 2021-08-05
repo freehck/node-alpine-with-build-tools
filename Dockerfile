@@ -9,4 +9,5 @@ RUN apk add --no-cache --virtual .persistent-deps \
       git \
       py-pip
 COPY package.json /
+COPY package-lock.json /
 RUN cd / && npm install
